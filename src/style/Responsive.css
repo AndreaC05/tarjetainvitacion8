@@ -22,14 +22,14 @@
   .hora_tiempo span:nth-child(1),
   .minutos_tiempo span:nth-child(1),
   .segundos_tiempo span:nth-child(1) {
-    font-size: 38px !important;
+    font-size: 45px !important;
   }
 
   .dia_tiempo span:nth-child(2),
   .hora_tiempo span:nth-child(2),
   .minutos_tiempo span:nth-child(2),
   .segundos_tiempo span:nth-child(2) {
-    font-size: 20px !important;
+    font-size: 30px !important;
   }
 
   .buton_direccion i,
@@ -42,16 +42,7 @@
   .buton_direccion Button,
   .buton_whatsapp Button {
     padding: 2px 18px;
-    font-size: 18px;
-  }
-
-  .nombre {
-    margin-top: 170px;
-    margin-left: 150px;
-  }
-
-  .nombre h1:nth-child(2) {
-    margin-left: 0px;
+    font-size: 20px;
   }
 
   .musica_reproductor {
