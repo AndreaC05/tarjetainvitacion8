@@ -1,0 +1,46 @@
+.container_hora {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contador {
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.dia_tiempo,
+.hora_tiempo,
+.minutos_tiempo,
+.segundos_tiempo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 
+    -2px -2px 4px #9675A0, 
+     2px -2px 4px #9675A0, 
+    -2px  2px 4px #9675A0, 
+     2px  2px 4px #9675A0;
+}
+
+.dia_tiempo span:nth-child(1),
+.hora_tiempo  span:nth-child(1), 
+.minutos_tiempo span:nth-child(1), 
+.segundos_tiempo span:nth-child(1) {
+    font-size: 50px;
+    font-family: "Italianno", cursive;
+}
+
+.dia_tiempo span:nth-child(2),
+.hora_tiempo  span:nth-child(2), 
+.minutos_tiempo span:nth-child(2), 
+.segundos_tiempo span:nth-child(2) {
+    font-size: 28px;
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+}

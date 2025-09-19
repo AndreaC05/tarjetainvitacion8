@@ -1,0 +1,110 @@
+.container_calendario {
+    max-width: 400px;
+    margin: 20px auto;
+    /* padding: 20px; */
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container_calendario h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    color: white;
+    text-shadow: 
+    -2px -2px 4px #9675A0, 
+     2px -2px 4px #9675A0, 
+    -2px  2px 4px #9675A0, 
+     2px  2px 4px #9675A0;
+    font-size: 40px;
+}
+
+.calensario_dias_headers {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.calendario_headers,
+.calendario_dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+}
+
+.header_dia {
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-size: 20px;
+    text-shadow: 
+    -2px -2px 4px #9675A0, 
+     2px -2px 4px #9675A0, 
+    -2px  2px 4px #9675A0, 
+     2px  2px 4px #9675A0;
+}
+
+.dia {
+    position: relative;
+    width: 40px;
+    padding-top: 100%;
+    overflow: hidden;
+    font-family: "Italianno", cursive;
+    height: 60px;
+    text-shadow: 
+    -2px -2px 4px #9675A0, 
+     2px -2px 4px #9675A0, 
+    -2px  2px 4px #9675A0, 
+     2px  2px 4px #9675A0;
+}
+
+.dia_vacio {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.dia_activo {
+    cursor: pointer;
+}
+
+.numero_dia {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: 26px;
+    font-weight: bold;
+    z-index: 1;
+    color: #ffffff;
+}
+
+.icono_especial.imagen_kimetsu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* encima del número */
+  opacity: 0.8; /* Corregido: era "o.8" */
+  pointer-events: none;
+}
+
+.icono_especial.imagen_kimetsu img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: rotacion 2s linear infinite; /* Rotación continua */
+}
+
+@keyframes rotacion {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

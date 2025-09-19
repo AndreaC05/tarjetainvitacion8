@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Italianno&display=swap');
+
+.container_texto_invitacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_logo {
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_logo img {
+  border-radius: 100%;
+  width: 210px;
+}
+
+.nombre {
+  position: absolute;
+  margin-top: 230px;
+}
+
+.nombre h1 {
+  font-family: "Inspiration", cursive;
+  font-weight: 400;
+  font-size: 65px;
+  color: #000;
+  /* text-shadow: -2px -2px 4px #474955, 2px -2px 4px #474955, -2px 2px 4px #474955,
+    2px 2px 4px #474955; */
+}
+
+.nombre h1:nth-child(2) {
+  margin-left: 70px;
+}
+
+.musica_reproductor {
+  margin-top: 210px;
+}
+
+.texto_invitacion {
+  margin-top: 20px;
+}
+
+/* .parrafo {
+  width: 400px;
+} */
+
+.texto_invitacion p {
+  text-align: center;
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  color: #000;
+  /* text-shadow: -2px -2px 4px #fcb697, 2px -2px 4px #fcb697, -2px 2px 4px #fcb697,
+    2px 2px 4px #fcb697; */
+  line-height: 1.4;
+}
+
+.texto_invitacion p:nth-child(2) {
+  font-size: 45px;
+}
+
+/* Cursor para el efecto typewriter */
+.cursor {
+  position: relative;
+  width: 340px;
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
+  min-height: 120px; /* Para mantener el espacio mientras se escribe */
+}
+
+/* Cursor parpadeante */
+.blinking-cursor::after {
+  content: "|";
+  color: rgba(255, 255, 255, 0.75);
+  animation: blinkingCursor 1s infinite;
+}
+
+@keyframes blinkingCursor {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Animación para el segundo texto */
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.calendario,
+.Hora {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendario h2,
+.Hora h2 {
+  font-family: "Inspiration", cursive;
+  /* font-weight: 400; */
+  color: #c2b5a0;
+  font-size: 45px;
+  text-shadow: -2px -2px 4px #fff, 2px -2px 4px #fff, -2px 2px 4px #fff,
+    2px 2px 4px #fff;
+}
+
+.container_butons {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.buton_direccion,
+.buton_whatsapp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buton_direccion i,
+.buton_whatsapp i {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #fff; /* Icono en lila suave */
+  animation: glowLila 2s infinite alternate;
+}
+
+@keyframes glowLila {
+  0% {
+    text-shadow: 0 0 5px rgba(219, 206, 226, 0.4),
+      0 0 10px rgba(219, 206, 226, 0.4),
+      0 0 20px rgba(150, 117, 160, 0.4),
+      0 0 30px rgba(150, 117, 160, 0.2);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(219, 206, 226, 0.9),
+      0 0 20px rgba(219, 206, 226, 0.8),
+      0 0 40px rgba(150, 117, 160, 0.7),
+      0 0 80px rgba(150, 117, 160, 0.6);
+  }
+}
+
+.buton_direccion Button,
+.buton_whatsapp Button {
+  background-color: rgba(150, 117, 160, 0.8); /* Fondo morado oscuro */
+  color: #fff; /* Texto lila claro */
+  border: none;
+  padding: 5px 10px;
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-size: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.buton_direccion Button:hover,
+.buton_whatsapp Button:hover {
+  background-color: #dbcee2; /* Fondo lila claro */
+  color: #9675a0; /* Texto en morado oscuro */
+  box-shadow: 0 0 20px rgba(219, 206, 226, 0.8),
+    0 0 40px rgba(219, 206, 226, 0.6),
+    0 0 60px rgba(150, 117, 160, 0.5);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(219, 206, 226, 0.8),
+      0 0 40px rgba(219, 206, 226, 0.6),
+      0 0 60px rgba(150, 117, 160, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(219, 206, 226, 1),
+      0 0 60px rgba(219, 206, 226, 0.8),
+      0 0 90px rgba(150, 117, 160, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(219, 206, 226, 0.8),
+      0 0 40px rgba(219, 206, 226, 0.6),
+      0 0 60px rgba(150, 117, 160, 0.5);
+  }
+}
+
+/* Animación de deslizamiento desde abajo */
+.slide-up-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-delay: 0s;
+}
+
+.slide-up-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

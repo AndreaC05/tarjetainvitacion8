@@ -1,0 +1,60 @@
+@media (max-width: 1440px) {
+  .cursor {
+    width: 310px;
+    font-size: 26px;
+    min-height: 120px;
+  }
+
+  .calendario_headers,
+  .calendario_dias {
+    gap: 5px !important;
+  }
+
+  .header_dia {
+    font-size: 14px !important;
+  }
+
+  .numero_dia {
+    font-size: 26px !important;
+  }
+
+  .dia_tiempo span:nth-child(1),
+  .hora_tiempo span:nth-child(1),
+  .minutos_tiempo span:nth-child(1),
+  .segundos_tiempo span:nth-child(1) {
+    font-size: 38px !important;
+  }
+
+  .dia_tiempo span:nth-child(2),
+  .hora_tiempo span:nth-child(2),
+  .minutos_tiempo span:nth-child(2),
+  .segundos_tiempo span:nth-child(2) {
+    font-size: 20px !important;
+  }
+
+  .buton_direccion i,
+  .buton_whatsapp i {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .buton_direccion Button,
+  .buton_whatsapp Button {
+    padding: 2px 18px;
+    font-size: 18px;
+  }
+
+  .nombre {
+    margin-top: 170px;
+    margin-left: 150px;
+  }
+
+  .nombre h1:nth-child(2) {
+    margin-left: 0px;
+  }
+
+  .musica_reproductor {
+    margin-top: 170px;
+  }
+}
